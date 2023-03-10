@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+body {
+  background: url(../image/bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  /* background: url(../image/bg.jpg) no-repeat center; */
+  background-size: cover;
+}
+.container .item img {
+  width: 100%;
+}
+
+.tex h1 {
+  font-family: "Raleway", sans-serif;
+  /* font-style: normal;  */
+  font-size: 48px;
+
+  font-weight: 400;
+  color: #444444;
+}
+.tex h2 {
+  font-family: "Raleway", sans-serif;
+  /* font-style: normal;  */
+  font-size: 104px;
+
+  font-weight: 600;
+  color: #444444;
+}
+.tex button {
+  background-color: #00acf1;
+  color: #ffffff;
+  height: 48px;
+  width: 179px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.roun h3 {
+  font-family: "Raleway", sans-serif;
+  /* font-style: normal;  */
+  font-size: 36px;
+
+  font-weight: 200;
+  color: #444444;
+}
+/* asddddddddd  */
+.baner {
+  animation: banner-animation 10s infinite;
+}
+
+/* @keyframes banner-animation {
+  0% {
+    transform: translateX(100%) translateY(100%);
+  }
+  25% {
+    transform: translateX(0%) translateY(100%);
+  }
+  50% {
+    transform: translateX(0%) translateY(0%);
+  }
+  75% {
+    transform: translateX(0%) translateY(0%);
+  }
+  100% {
+    transform: translateX(100%) translateY(0%);
+  }
+} */
+
+.tex h1,
+.tex h2,
+.tex button {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: text-animation 5s infinite;
+}
+
+@keyframes text-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}
+
+.tex h1 {
+  animation-delay: 0s;
+}
+
+.tex h2 {
+  animation-delay: 0.5s;
+}
+
+.tex button {
+  animation-delay: 1s;
+}
+
+.item img {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: image-animation 5s infinite;
+}
+
+@keyframes image-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}
+
+/* round  */
